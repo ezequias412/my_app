@@ -13,8 +13,20 @@
             align-self:center;
 			background:#000000; 
 			font-family:verdana;  
-			color:#EEEEEE; 
+			box-shadow:0 0 50px 10px black; 
 		} 
+        .contenedor{
+            width:%100;
+            height:%100;
+            position:relative;
+            top:100px;
+            text-align:center;
+        }
+        .contenido{
+            width:%80;
+            height:%80;
+            margin:0 auto;
+        }
     </style>
     <head>
         <div class="barramain">
@@ -23,19 +35,11 @@
             </left>
 	   </div>
     </head>
-	<body background="./imagenes/back.jpg")>
-        <div id="contenedor">
-		  <center>
-        	   <table width="500" class='girando'>
-            	   <tr>
-               		   <td>
-                    	   <center>
-    	            	      <p> $ $ <br> U </p>
-                	       </center>
-            	       </td>
-        	       </tr>
-        	   </table>
-            </center>
+	<body background="./imagenes/back.jpg">
+        <div class="contenedor">
+            <div class="contenido">
+        	   <a href="http://localhost:4567/prueba"><img src="./imagenes/local.jpg"/></a>
+            </div>
             <h1></h1>
     	   <a href="http://localhost:4567/prueba"><button type ="button" class='girando'>Probando</button></a>
     	   <h1></h1>
