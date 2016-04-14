@@ -22,11 +22,29 @@
             top:100px;
             text-align:center;
         }
-        .contenido{
+        #contenido{
             width:%80;
             height:%80;
             margin:0 auto;
         }
+        #contenido img {
+            opacity: 0.8;
+            /*Transition*/
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            /*Reflection*/
+            -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.1)));
+        }
+        #contenido img:hover {  
+            opacity: 1;
+            /*Reflection*/
+            -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.4)));
+            /*Glow*/
+            -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+            -moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+            box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+        } 
     </style>
     <head>
         <div class="barramain">
@@ -37,7 +55,7 @@
     </head>
 	<body background="./imagenes/back.jpg">
         <div class="contenedor">
-            <div class="contenido">
+            <div id="contenido">
         	   <a href="http://localhost:4567/prueba"><img src="./imagenes/local.jpg"/></a>
             </div>
             <h1></h1>
