@@ -1,0 +1,44 @@
+<html> 
+	<style>
+         p{
+          font-family:verdana;
+          font-size: 80px;
+          color: white;
+        }
+        .barramain{ 
+			width:%100; 
+			height:90px; 
+            position:relative;
+            top:50px;
+            align-self:center;
+			background:#000000; 
+			font-family:verdana;  
+			color:#EEEEEE; 
+		} 
+    </style>
+    <head>
+        <div class="barramain">
+            <left>
+    	       <p> Probando </p>
+            </left>
+	   </div>
+    </head>
+	<body background="./imagenes/back.jpg")>
+        <div id="contenedor">
+		  <center>
+        	   <table width="500" class='girando'>
+            	   <tr>
+               		   <td>
+                    	   <center>
+    	            	      <p> $ $ <br> U </p>
+                	       </center>
+            	       </td>
+        	       </tr>
+        	   </table>
+            </center>
+            <h1></h1>
+    	   <a href="http://localhost:4567/prueba"><button type ="button" class='girando'>Probando</button></a>
+    	   <h1></h1>
+        </div>
+	</body>
+</html>
